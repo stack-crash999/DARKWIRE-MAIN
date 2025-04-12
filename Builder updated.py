@@ -8,7 +8,7 @@ from PIL import Image, ImageTk
 class Power_Grabber(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title('Power Grabber Builder')
+        self.title('DarkWire Builder')
         self.geometry('1000x600')
         self.resizable(False, False)
         ctk.set_appearance_mode('dark')
